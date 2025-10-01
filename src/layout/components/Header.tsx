@@ -8,10 +8,10 @@ export const Header = memo(() => {
   return (
     <header className="bg-[#2B2B2B] h-[100px] flex items-center">
       <div className="max-w-[1200px] mx-auto w-full flex items-center justify-between px-6">
-        <div className="flex items-center">
+        <Link to={"/"} className="flex items-center">
           <BiStoreAlt className="w-8 h-8 text-[#A259FF]" />
           <p className="font-bold text-white ml-3 text-lg">NFT Marketplace</p>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex items-center gap-8 text-white font-medium">
@@ -50,16 +50,19 @@ export const Header = memo(() => {
       </div>
 
       <nav className="md:hidden fixed bottom-0 left-0 w-full bg-[#2B2B2B] flex justify-around items-center py-3 border-t border-gray-700 z-50">
-        <a href="#" className="flex flex-col items-center text-white">
+        <Link to={"/"} className="flex flex-col items-center text-white">
           <BiStoreAlt className="w-6 h-6 text-[#A259FF]" />
           <span className="text-sm">Marketplace</span>
-        </a>
+        </Link>
         <a href="#" className="flex flex-col items-center text-white">
           <span className="text-sm">Rankings</span>
         </a>
         <a href="#" className="flex flex-col items-center text-white">
           <span className="text-sm">Wallet</span>
         </a>
+        <Link to={"users"} className="hover:text-[#A259FF] text-white">
+          Users
+        </Link>
         <a href="#" className="flex flex-col items-center text-white">
           <AiOutlineUser className="w-6 h-6" />
           <span className="text-sm">Account</span>
