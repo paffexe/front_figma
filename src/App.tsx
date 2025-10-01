@@ -1,12 +1,12 @@
-import { Header } from "./components/header/Header";
+import { memo } from "react";
+import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
   return (
-    <div className="container">
-      <Header />
-      <h3>App</h3>
+    <div className="">
+      <AppRoutes />
     </div>
   );
 };
 
-export default App;
+export default memo(App);
