@@ -22,9 +22,9 @@ const AppRoutes = () => {
               path: "users",
               element: <Items />,
             },
+            { path: "*", element: <NotFound /> },
           ],
         },
-        { path: "*", element: <NotFound /> },
       ])}
     </div>
   );
