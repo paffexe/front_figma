@@ -12,8 +12,7 @@ type User = {
 const Items = () => {
   const getUsers = () => api.get("users");
   const [users, setUsers] = useState<User[]>([]);
-  const [count, setCount] = useState(0);
-  const [value, setValue] = useState("");
+
 
   useEffect(() => {
     const fetchUsers = async () => {
