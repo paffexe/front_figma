@@ -2,6 +2,7 @@ import { Button } from "antd";
 import { memo } from "react";
 import { BiStoreAlt } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Header = memo(() => {
   return (
@@ -23,6 +24,9 @@ export const Header = memo(() => {
             <a href="#" className="hover:text-[#A259FF]">
               Connect Wallet
             </a>
+            <Link to={"users"} className="hover:text-[#A259FF]">
+              Users
+            </Link>
           </nav>
 
           <Button

@@ -4,6 +4,7 @@ import MainLayout from "../layout/MainLayout";
 
 const Home = lazy(() => import("../pages/Home"));
 const Items = lazy(() => import("../pages/Items"));
+const NotFound = lazy(() => import("../pages/NotFound"));
 
 const AppRoutes = () => {
   return (
@@ -18,11 +19,12 @@ const AppRoutes = () => {
               element: <Home />,
             },
             {
-              path: "items",
+              path: "users",
               element: <Items />,
             },
           ],
         },
+        { path: "*", element: <NotFound /> },
       ])}
     </div>
   );
